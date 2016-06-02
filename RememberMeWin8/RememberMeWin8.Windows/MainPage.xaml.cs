@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Copyright 2016 IBM Corp.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -62,7 +62,7 @@ namespace RememberMeWin8
             _newClient = WorklightClient.CreateInstance();
 
             _newClient.RegisterChallengeHandler(userChallengeHandler);
-            
+
             getAccessToken();
 
         }
@@ -167,6 +167,7 @@ namespace RememberMeWin8
 
                 hideChallenge();
 
+                this.AddUserName(username.Text);
 
             }
             else
@@ -242,16 +243,9 @@ namespace RememberMeWin8
 
         }
 
-        public WorklightChallengeHandler getChallengeHandler()
-        {
-            return userChallengeHandler;
-        }
-
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             userChallengeHandler.logout(userChallengeHandler.SecurityCheck);
         }
     }
 }
-
-
