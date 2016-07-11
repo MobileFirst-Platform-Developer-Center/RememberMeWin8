@@ -16,6 +16,8 @@ https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authenticat
  - `mfpdev app register` - to register the application.
  - `mfpdev app push` - to map the `accessRestricted` scope to the `UserLogin` security check.
 
+3. Import the project to Visual Studio and [add the MobileFirst Windows SDK](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adding-the-mfpf-sdk/windows-8-10/#adding-the-mobilefirst-native-sdk).
+
 ### Supported Levels
 IBM MobileFirst Platform Foundation 8.0
 
